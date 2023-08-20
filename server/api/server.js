@@ -24,7 +24,7 @@ connectionToDB();
 server.use(express.json());
 server.use(
   cors({
-    origin: ["https://deploy-mern-frontend.vercel.app"],
+    origin: ["http://localhost:3000"],
     methods: ["POST", "GET"],
     credentials: true,
   })
