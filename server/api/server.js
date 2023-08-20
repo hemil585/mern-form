@@ -9,7 +9,7 @@ server.get("/", (req, res) => {
   res.send("Validation Form");
 });
 
-const userRouter = require("./routes/user");
+const userRouter = require("../routes/user");
 
 const connectionToDB = async () => {
   try {
