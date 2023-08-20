@@ -1,4 +1,4 @@
-require('dotenv').config();
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -24,8 +24,8 @@ connectionToDB();
 server.use(express.json());
 server.use(
   cors({
-    origin: "http://localhost:3000",
-    methods: ["GET", "POST"],
+    origin: ["https://deploy-mern-frontend.vercel.app"],
+    methods: ["POST", "GET"],
     credentials: true,
   })
 );
